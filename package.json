@@ -1,12 +1,28 @@
 {
   "name": "@lucasrmp/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "Cli for project templates",
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmp-software/template-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/rmp-software/template-cli/issues"
+  },
+  "homepage": "https://github.com/rmp-software/template-cli#readme",
+  "contributors": [
+    "Lucas Pessone <lucas.rmagalhaes@gmail.com>"
+  ],
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc && shx rm -rf dist/templates && shx cp -r templates dist"
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r templates dist",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public"
   },
   "bin": {
     "cli": "./dist/index.js"
