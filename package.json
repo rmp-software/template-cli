@@ -1,6 +1,6 @@
 {
   "name": "@lucasrmp/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Cli for project templates",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
     "publish:npm": "npm publish --access public"
   },
   "bin": {
-    "cli": "./dist/index.js"
+    "rmp-templates": "./dist/index.js"
   },
   "devDependencies": {
     "@types/ejs": "^3.0.7",
