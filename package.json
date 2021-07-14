@@ -1,6 +1,6 @@
 {
   "name": "@lucasrmp/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "Cli for project templates",
   "main": "dist/index.js",
